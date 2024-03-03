@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Image Gallery</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Font Awesome CDN for icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Roboto+Condensed:ital@1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/stylesheets/nav.css">
+  <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">
+        <h1>Albums</h1>
+      </div>
+      <ul>
+        <% if(!loginUser){ %>
+        <li><a href="/" class="fadeIn"><i class="fas fa-home"></i> Home</a></li>
+        <li><a href="/about" class="fadeIn"><i class="fas fa-info-circle"></i> About</a></li>
+        <li><a href="/contact" class="fadeIn"><i class="fas fa-envelope"></i> Contact</a></li>
+        <div class="button"><a href="/signup">SignUp</a></div>
+        <% } else { %>
+
+          <li><a href="/profile" class="fadeIn"><i class="fas fa-images"></i> Upload Image</a></li>
+
+          <li><a href="/show" class="fadeIn"><i class="fas fa-images"></i> Gallery</a></li>
+          <li> <a href="/logout"><i class="ri-logout-circle-fill"></i>Logout</a></li>
+          <% } %>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Your image gallery content goes here -->
+
+</body>
+</html>

@@ -1,0 +1,69 @@
+body {
+    /* margin: 0; */
+    font-family: Arial, sans-serif;
+  }
+  
+  header {
+    /* background-color: #333; */
+    padding: 20px 0;
+  }
+  
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+  
+  .logo h1 {
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #ed5316;
+  }
+  
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  ul li {
+    padding-top: 8px;
+    margin: 0 15px;
+  }
+  
+  ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    transition: transform 0.3s ease-in-out;
+    animation: fadeInAnimation 1s ease-in-out forwards;
+    opacity: 0;
+  }
+  
+  .button{
+    padding: 15px 25px;
+    background-color: #ffcc00;
+    border-radius: 5px;
+  }
+  .button >a{
+    color: #fff;
+    text-decoration: none;
+  }
+  @keyframes fadeInAnimation {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  ul li a:hover {
+    color: #ffcc00; /* Change the color on hover as desired */
+  }
+  

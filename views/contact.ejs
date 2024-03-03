@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/stylesheets/contact.css">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+
+</head>
+<body>
+    <%- include("partials/nav")%>
+  <div class="contact-section">
+    <h2>Contact Us</h2>
+    <p>Have questions? Reach out to us using the form below or through our contact information:</p>
+
+    <form action="#" method="post">
+      <div class="form-group">
+        <label for="name">Your Name</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Your Email</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+      </div>
+      <button type="submit">Send Message</button>
+    </form>
+
+    <div class="contact-info">
+      <h3>Contact Information</h3>
+      <p>Email: contact@example.com</p>
+      <p>Phone: +1234567890</p>
+      <p>Address: 123 Main Street, City, Country</p>
+    </div>
+  </div>
+</body>
+</html>

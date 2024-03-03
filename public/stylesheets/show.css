@@ -1,0 +1,39 @@
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  overflow: hidden;
+ 
+}
+.img a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 30px;
+    
+}
+
+h2{
+    text-align: center;
+    font-size: 40px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(41, 6, 138);
+}
+h1{
+    padding-top: 5px;
+    text-align: center;
+    color: #fff;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+/* margin-bottom: 5px; */
+}
+img{
+    width: 400px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin: 20px;
+            overflow: hidden;
+}
+.card{
+    padding: 5px;
+            text-align: center;
+}

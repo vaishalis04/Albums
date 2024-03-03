@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <link rel="stylesheet" href="/stylesheets/show.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.7.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+    <%- include("partials/nav")%>
+    <h2>All Images</h2>
+    <hr>
+    <div class="container">
+    <% DATA.forEach(function(d){ %>
+        <div class="content">
+
+       
+        <div class="img">
+        <h1> <%= d.username%></h1> 
+        <img src="/uploads/<%= d.avatar%>" alt="" height="300">
+        <div class="card">
+      <a href="/delete/<%= d._id%>"><i class="ri-delete-bin-line"></i>
+      </a>
+      <a href="/update/<%=d._id%>"><i class="ri-exchange-line"></i></a>
+    </div>
+</div>
+</div>
+      <%})%>
+   
+</div>
+
+      <a href="/profile">back</a>
+</body>
+</html>

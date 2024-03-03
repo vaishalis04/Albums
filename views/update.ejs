@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/stylesheets/profile.css">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+
+</head>
+<body>
+    <%- include("partials/nav")%>
+    <!-- <form action="/uploadFile" method="post" enctype="multipart/form-data">
+        <input type="text" value="username"  name="username">
+        <input type="file" value="avatar" name="avatar">
+        <button>Submit</button>
+      </form> -->
+      <h1>UPLOAD YOUR IMAGES</h1>
+    <div class="container">
+    <form action="/uploadFile" method="post" enctype="multipart/form-data">
+        <input type="text" name="username" value="username">
+      <div class="file"><input type="file"  value="avatar" name="avatar"></div>
+        <div class="cc"><button>Submit</button></div>
+      </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,18 @@
+
+  .about-section {
+  margin-top: 20%;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: transparent;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: #fff;
+  }
+  
+  .about-section h2 {
+    text-align: center;
+  }
+  
+  
+  

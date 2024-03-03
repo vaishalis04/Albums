@@ -1,0 +1,56 @@
+*{
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+html,body{
+  width: 100%;
+  height: 100%;
+  background-image: url(https://images.unsplash.com/photo-1551125735-900f662aeb07?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Y29sb3JmdWxsJTIwYmFja2dyb3VuZHxlbnwwfHwwfHx8MA%3D%3D);
+
+ background-size: 200% 100% !important;
+    animation: move 10s ease infinite;
+    transform: translate3d(0, 0, 0);
+    /* background: linear-gradient(45deg, #00ABE4 10%, #A2C7E5 90%); */
+    height: 100vh
+}
+@keyframes NO {
+  from, to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  10%, 30%, 50%, 70%, 90% {
+    -webkit-transform: translate3d(-10px, 0, 0);
+    transform: translate3d(-10px, 0, 0);
+  }
+
+  20%, 40%, 60%, 80% {
+    -webkit-transform: translate3d(10px, 0, 0);
+    transform: translate3d(10px, 0, 0);
+  }
+}
+@keyframes arrive {
+  0% {
+      opacity: 0;
+      transform: translate3d(0, 50px, 0);
+  }
+  
+  100% {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes move {
+  0% {
+      background-position: 0 0
+  }
+
+  50% {
+      background-position: 100% 0
+  }
+
+  100% {
+      background-position: 0 0
+  }
+}
